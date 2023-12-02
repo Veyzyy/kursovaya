@@ -10,12 +10,13 @@ import Sviaz from './Sviaz'
 import News from './News'
 import Free from './Free'
 import Foot from './Foot'
+import ChartComponent from './ChartComponent';
 import { Helmet } from 'react-helmet';
 
 
 const App = () =>{
     const [menuActive, setMenuActive] = useState(false)
-    const items = [{value:"Главная", href: '#header'},{value:"О нас", href: '#'},{value:"Преимущества", href: '#story'},{value:"Стоимость услуг", href: '#price'},{value:"Мы на карте", href: '/main'}]
+    const items = [{value:"Главная", href: '#header'},{value:"О нас", href: '#'},{value:"Преимущества", href: '#story'},{value:"Стоимость услуг", href: '#price'},{value:"Мы на карте", href: '#contact'}]
     return(
         <div className = 'app'>
 
@@ -29,6 +30,7 @@ const App = () =>{
                 <Prem/>
                 <Price/>
                 <Gallery/>
+                <ChartComponent/>
                 <Price2/>
                 <Sviaz/>
                 <News/>

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import logo from "./img/header_vector.svg"
+import history_full  from "./img/history_full.jpg"
+import history_mid from "./img/history-mid.jpg"
+import history_min from "./img/history-min.jpg"
 import '../Css/About.css'
 
 
@@ -9,7 +11,12 @@ const Prem = () =>{
                 <div className="container">
                     <div className="story-content">
                     <div className="story-image">
-                        <img src={logo} alt="Наша команда" />
+                            <picture>
+                                <source media="(min-width: 1024px)" srcSet={history_full} />
+                                <source media="(max-width: 768px)" srcSet={history_min} />
+                                <source media="(min-width: 768px) and (max-width: 1024px)" srcSet={history_mid} />
+                                <img data-depth="0.3"  src={history_full} alt="" className="form vector" />
+                            </picture>
                     </div>
                     <div className="story-text">
                         <h2>Немного нашей истории</h2>

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import '../Css/About.css'
-import logo from "./img/header_vector.svg"
+import history_full from "./img/gif1.gif"
+import history_mid from "./img/gif1.gif"
+import history_min from "./img/gif1.gif"
 import { Helmet } from 'react-helmet';
 
 const About = () =>{
@@ -23,7 +25,12 @@ const About = () =>{
                         </a>
                         </div>
                         <div className="header-image">
-                        <img data-depth="0.3" src={logo} alt="header-image" />
+                            <picture>
+                                <source media="(min-width: 1024px)" srcSet={history_full} />
+                                <source media="(max-width: 768px)" srcSet={history_mid} />
+                                <source media="(min-width: 768px) and (max-width: 1024px)" srcSet={history_min} />
+                            <img data-depth="0.3"  src={history_full} alt="" className="form vector" />
+                            </picture>
                         </div>
                     </div>
                     <div className="arrow-container">

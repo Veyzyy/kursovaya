@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
-import logo from "./img/header_vector.svg"
+import news1_full from "./img/news1_full.jpg"
+import news2_full from "./img/news2_full.jpg"
+import news3_full from "./img/news3_full.jpg"
+import news1_mid from "./img/news1_mid.jpg"
+import news2_mid from "./img/news2_mid.jpg"
+import news3_mid from "./img/news3_mid.jpg"
+import news1_min from "./img/news1_min.jpg"
+import news2_min from "./img/news2_min.jpg"
+import news3_min from "./img/news3_min.jpg"
 import '../Css/About.css'
 
 const News = () =>{
@@ -10,7 +18,12 @@ const News = () =>{
                 <div className="news-content">
                 <div className="news-item el-anim">
                     <div className="news-img">
-                    <img src="img/1_news.jpg" alt="Новость об открытии офиса" />
+                    <picture>
+                        <source media="(min-width: 1024px)" srcSet={news1_full} />
+                        <source media="(max-width: 768px)" srcSet={news1_mid} />
+                        <source media="(min-width: 768px) and (max-width: 1024px)" srcSet={news1_min} />
+                        <img data-depth="0.3"  src={news1_full} alt="" className="form vector" />
+                    </picture>
                     </div>
                     <span className="news-date">18 мая 2022</span>
                     <p className="news-text">
@@ -20,7 +33,12 @@ const News = () =>{
                 </div>
                 <div className="news-item el-anim">
                     <div className="news-img">
-                    <img src="img/2_news.jpg" alt="Новость о ремонте" />
+                    <picture>
+                        <source media="(min-width: 1024px)" srcSet={news2_full} />
+                        <source media="(max-width: 768px)" srcSet={news2_mid} />
+                        <source media="(min-width: 768px) and (max-width: 1024px)" srcSet={news2_min} />
+                        <img data-depth="0.3"  src={news2_full} alt="" className="form vector" />
+                    </picture>
                     </div>
                     <span className="news-date">2 апреля 2022</span>
                     <p className="news-text">
@@ -30,7 +48,12 @@ const News = () =>{
                 </div>
                 <div className="news-item el-anim">
                     <div className="news-img">
-                    <img src="img/3_news.jpg" alt="Где будет новый офис" />
+                    <picture>
+                        <source media="(min-width: 1024px)" srcSet={news3_full} />
+                        <source media="(max-width: 768px)" srcSet={news3_mid} />
+                        <source media="(min-width: 768px) and (max-width: 1024px)" srcSet={news3_min} />
+                        <img data-depth="0.3"  src={news3_full} alt="" className="form vector" />
+                    </picture>
                     </div>
                     <span className="news-date">3 мая 2022</span>
                     <p className="news-text">
