@@ -25,7 +25,7 @@ const News = () =>{
                         <img data-depth="0.3"  src={news1_full} alt="" className="form vector" />
                     </picture>
                     </div>
-                    <span className="news-date">18 мая 2022</span>
+                    <span className="news-date">4 ноября 2023</span>
                     <p className="news-text">
                     Открыт новый офис в Санкт-Петебурге рядом со станцией метро Ладожская,
                     рекомендуем к посещению
@@ -40,7 +40,7 @@ const News = () =>{
                         <img data-depth="0.3"  src={news2_full} alt="" className="form vector" />
                     </picture>
                     </div>
-                    <span className="news-date">2 апреля 2022</span>
+                    <span className="news-date">16 октября 2023</span>
                     <p className="news-text">
                     Офис на Москвоской закрыт на ремонт, приносим извинения и дарим
                     дополнительный месяц к абонементу
@@ -55,7 +55,7 @@ const News = () =>{
                         <img data-depth="0.3"  src={news3_full} alt="" className="form vector" />
                     </picture>
                     </div>
-                    <span className="news-date">3 мая 2022</span>
+                    <span className="news-date">15 июля 2023</span>
                     <p className="news-text">
                     Планируем открывать офисы в других городах. Какой город станет
                     следующим можете решить именно Вы

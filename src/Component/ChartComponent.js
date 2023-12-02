@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto';
+import '../Css/Char.css'
 
 const ChartComponent = () => {
   const canvasRef = useRef(null);
@@ -48,8 +49,8 @@ const ChartComponent = () => {
   }, []);
 
   return (
-        <div style={{ width: '60%', margin: '0 auto' }}>
-        <h2 style={{ paddingTop: '70px' }}>Загруженность помещений по времени</h2>
+        <div className='ChartCom'>
+        <h2 className='H2_char'>Загруженность помещений по времени</h2>
         <canvas ref={canvasRef} width="300" height="150" style={{ maxWidth: '100%' }} />
         </div>
   );

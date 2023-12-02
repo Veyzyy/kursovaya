@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../Css/About.css'
+import logo from "./img/logotypewhite.svg"
 
 const Foot = () =>{
     return(
@@ -7,7 +8,7 @@ const Foot = () =>{
         <div className="footer-content">
             <div className="footer-logo">
             <a href="#header">
-                <img src="img/logotypewhite.svg" alt="" /> <br />
+                <img src={logo} alt="" /> <br />
             </a>
             <span>© Все права защищены</span>
             </div>

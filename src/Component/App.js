@@ -11,6 +11,7 @@ import News from './News'
 import Free from './Free'
 import Foot from './Foot'
 import ChartComponent from './ChartComponent';
+import logo from "./img/logotypewhite.svg"
 import { Helmet } from 'react-helmet';
 
 
@@ -24,6 +25,7 @@ const App = () =>{
                     <div className ={`burger-btn ${menuActive ? 'active' : ''}`} onClick={()=> setMenuActive(!menuActive)}>
                         <span/>
                     </div>
+                    <div> <img src={logo} alt="Логотип" className="logo" /></div>
             </nav>   
             <main>
                 <About/>

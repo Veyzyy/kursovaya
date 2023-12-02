@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../Css/About.css'
-import logo from "./img/header_vector.svg"
+import history_full from "./img/gif1.gif"
 
 const Free = () =>{
     return(
@@ -37,10 +37,7 @@ const Free = () =>{
             </form>
             <div className="order-img">
               <picture>
-                <source media="(min-width: 1024px)" srcSet={logo} />
-                <source media="(max-width: 768px)" srcSet={logo} />
-                <source media="(min-width: 768px) and (max-width: 1024px)" srcSet={logo} />
-              <img data-depth="0.3"  src={logo} alt="" className="form vector" />
+                <img data-depth="0.3"  src={history_full} alt="" className="form vector" />
               </picture>
             </div>
           </div>

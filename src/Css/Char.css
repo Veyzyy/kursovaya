@@ -1,0 +1,33 @@
+.ChartCom{
+    width: 60%; 
+    margin: 0 auto;
+}
+.H2_char{
+    padding-top: 70px;
+}
+@media screen and (max-width: 1150px){
+    .ChartCom{
+        width: 70%; 
+    }
+}
+
+@media screen and (max-width: 950px){
+    .ChartCom{
+        width: 80%; 
+    }
+}
+
+
+
+@media screen and (max-width: 716px) {
+    .ChartCom{
+        margin-top: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .H2_char{
+        padding-top: 5px;
+    }
+
+}
+
